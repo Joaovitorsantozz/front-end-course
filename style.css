@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Navbar estática: rola junto com a página */
+.navbar {
+  background-color: #999;
+  border: 2px solid #222;
+  border-radius: 0;
+  margin-bottom: 18px;
+  min-height: 68px;
+}
+.navbar-default .navbar-brand {
+  color: #000;
+  font-size: 28px;
+  font-weight: bold;
+  height: 64px;
+  line-height: 34px;
+  padding-left: 28px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus { color: #000; }
+
+.navbar-default .navbar-toggle {
+  border: 2px solid #222;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #222;
+  height: 4px;
+  width: 28px;
+}
+
+/* Links do menu dropdown mobile */
+#mobile-menu { border-top: 1px solid #222; }
+#mobile-menu .navbar-nav { margin: 0 -15px; }
+#mobile-menu .navbar-nav > li > a {
+  background: #fff;
+  border-bottom: 1px solid #222;
+  color: #000;
+  font-size: 18px;
+  padding: 7px 15px;
+  text-align: center;
+}
+#mobile-menu .navbar-nav > li > a:hover { background: #ddd; }
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 38px;
+}
+
+
+.menu-section {
+  background-color: #999;
+  min-height: 1000px;
+  margin-bottom: 20px;
+  padding: 1px 15px 20px;
+}
+.menu-section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.menu-section p {
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse { display: none !important; }
+  .navbar-toggle { display: none !important; }
+}
+@media (max-width: 767px) {
+  h1 { margin-top: 20px; margin-bottom: 30px; }
+}
